@@ -1,0 +1,30 @@
+
+<div class="head">
+	<div class="head-icon">
+		<img src="static/icon-6.png">
+	</div>
+	<div class="head-text">
+		<p>为了给您提供更优质的服务，请您为我校提出宝贵 意见和建议，谨向您致以最真诚的谢意。</p>
+	</div>
+</div>
+
+<div class="box">
+	<div class="box-item" ng-repeat="item in infoData.details" id="{{item.question.question_id}}">
+		<p class="item-title">{{$index + 1}}、{{item.question.question}}</p>
+		<div class="item-aws" ng-repeat="answer in item.answer" id="{{answer.id}}" ng-click="clickItem(answer.id,item)">
+			<i class="item-icon-success" ng-show="item.checkedId == answer.id"></i>
+			<i class="item-icon-circle" ng-show="item.checkedId != answer.id"></i>
+			<p>{{answer.answer}}</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="bottom">
+	<div class="btm-left">
+		<p>已完成 <span>{{checkNum}}</span>/{{infoData.details.length}}</p>
+	</div>
+	<div class="btm-right" ng-click="submit()">
+		提交
+	</div>
+</div>

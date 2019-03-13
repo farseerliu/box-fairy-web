@@ -1,0 +1,92 @@
+
+<div class="head">
+	<div class="head-left">
+		<img src="{{infoData.tenant.avatar}}" width="80" height="69" alt="" />
+		<span>{{infoData.tenant.name}}</span>
+	</div>
+	<div class="head-right">
+		<p>发布日期：<span>{{infoData.created_at.split(' ')[0]}}</span></p>
+	</div>
+</div>
+
+<div class="banner">
+	<img src="" ng-src="{{infoData.image}}" alt="" />
+</div>
+
+<div class="title">
+	<p>{{infoData.name}}</p>
+</div>
+
+<div class="info">
+	<div class="info-item">
+		<div class="icon-box">
+			<img src="static/icon-1.png" alt="" />
+		</div>
+		<div class="info-text">
+			<p>{{infoData.start_time}}</p>
+		</div>
+	</div>
+	<div class="info-item">
+		<div class="icon-box">
+			<img src="static/icon-2.png" alt="" />
+		</div>
+		<div class="info-text">
+			<p>{{infoData.address}}</p>
+		</div>
+	</div>
+	<div class="info-item">
+		<div class="icon-box">
+			<img src="static/icon-3.png" alt="" />
+		</div>
+		<div class="info-text">
+			<p>已报名{{infoData.join}}人 / <span ng-if="infoData.number != 0">限{{infoData.number}}人报名</span><span ng-if="infoData.number == 0">不限人数</span></p>
+		</div>
+	</div>
+	<div class="info-item">
+		<div class="icon-box">
+			<img src="static/icon-4.png" alt="" />
+		</div>
+		<div class="info-text">
+			<p class="price" ng-if="infoData.amount != 0">{{infoData.amount}} 元</p>
+			<p class="price" ng-if="infoData.amount == 0">免费</p>
+		</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="content-head">
+		<p class="content-title">活动详情</p>
+		<img class="content-icon" src="static/icon-5.png">
+		<p class="content-text">
+			<span></span>
+			活动内容
+		</p>
+	</div>
+	<div class="content-main">
+		<p class="content-center">{{infoData.discription}}</p>
+	</div>
+</div>
+
+<div class="content">
+	<div class="content-head content-border">
+		<p class="content-text">
+			<span></span>
+			活动介绍
+		</p>
+		<!--<p class="main-title">活动分为两场，本场时间为12月20日 10:3-11:30 </p>
+		<p class="main-title">活动地点：丹凤路 消防大队云阳中队</p>-->
+	</div>
+	<div class="content-main" ng-bind-html="infoData.content | uHtml">
+
+	</div>
+</div>
+
+<div class="bottom">
+	<div class="btm-left">
+		<p ng-show="!isOver">距结束：<span>{{days}}天{{hours}}小时{{minutes}}分钟</span></p>
+		<p ng-show="isOver">已结束</p>
+	</div>
+	<div class="btm-right" ng-class="{'is-disable': isOver}" ng-click="singUp()">
+		报名
+	</div>
+</div>

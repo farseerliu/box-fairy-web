@@ -1,0 +1,108 @@
+page-plp {
+    min-height: 100%;
+    height: auto;
+    
+    .item-icon-success {
+        display: inline-block;
+        width: .2rem;
+        height: .2rem;
+        border-radius: .1rem;
+        border: 2px solid #ff6d6d;
+    }
+    .item-icon-circle {
+        display: inline-block;
+        width: .2rem;
+        height: .2rem;
+        border-radius: .1rem;
+        border: 1px solid #c8c8c8;
+    }
+    
+    .head {
+        padding: .35rem .2rem;
+        background: #f2f6f8;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .head-icon {
+            margin-right: .2rem;
+            margin-top: .05rem;
+            img {
+                width: .37rem;
+            }
+        }
+        .head-text {
+            
+            p {
+                color: #333333;
+                font-size: .3rem;
+                line-height: .4rem;
+            }
+        }
+    }
+    
+    .box {
+        padding: 0 .3rem 1rem;
+        .box-item {
+            padding: .3rem;
+            border-bottom: 1px solid #e7e7e7;
+            .item-title {
+                font-size: .28rem;
+                color: #2393b5;
+                margin-bottom: .1rem;
+            }
+            .item-aws {
+                display: flex;
+                display: -webkit-flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: .25rem;
+                i {
+                    margin-left: .05rem;
+                }
+                p {
+                    margin-left: .2rem;
+                    max-width: 91%;
+                    line-height: .4rem;
+                    font-size: .28rem;
+                }
+            }
+        }
+    }
+    
+    .bottom {
+        height: 1rem;
+        border-top: 1px solid #ebebeb;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: #ffffff;
+        .btm-left {
+            width: 62%;
+            height: 100%;
+            float: left;
+            p {
+                text-align: center;
+                font-size: .3rem;
+                color: #666666;
+                line-height: 1rem;
+                span {
+                    color: #fe9c2d;
+                }
+            }
+        }
+        .btm-right {
+            float: right;
+            width: 38%;
+            height: 100%;
+            background: #2dbeee;
+            color: #ffffff;
+            font-size: .3rem;
+            text-align: center;
+            line-height: 1rem;
+        }
+    } 
+    
+}

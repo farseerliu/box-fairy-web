@@ -1,0 +1,1 @@
+{"version":3,"sources":["page/index@demo.less","theme-demo.css"],"names":[],"mappings":"AACA;EACI,YAAA;CCAH","file":"theme-demo.css","sourcesContent":["// 演示多主题，如果不需要可删除\npage-index {\n    color: #999;\n}","page-index {\n  color: #999;\n}\n"]}

@@ -1,0 +1,182 @@
+page-index {
+    min-height: 100%;
+    height: auto;
+    background: #efecf3;
+    padding-bottom: 1rem;
+    .head {
+        height: 1.1rem;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .3rem;
+        background: #ffffff;
+        .head-left {
+            img {
+                width: .8rem;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span {
+                font-size: .3rem;
+                color: #000000;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .head-right {
+            p {
+                font-size: .2rem;
+                color: #a7a7a7;
+            }
+        }
+    }
+
+    .banner {
+        height: auto;
+        background: #ffffff;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .title {
+        font-size: .3rem;
+        padding: .25rem;
+        background: #ffffff;
+    }
+
+    .info {
+        padding-left: .25rem;
+        background: #ffffff;
+        margin-top: .2rem;
+        .info-item {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: flex-start;
+            align-items: center;
+            .icon-box {
+                margin-right: .2rem;
+                padding: .25rem 0;
+                img {
+                    width: .25rem;
+                    height: auto;
+                    display: inline-block;
+                }
+            }
+            .info-text {
+                font-size: .26rem;
+                color: #5c5c5c;
+                padding: .25rem 0;
+                border-bottom: 1px solid #e7e7e7;
+                width: 100%;
+                p {
+                    line-height: .4rem;
+                }
+                .price {
+                    color: #ff903f;
+                }
+            }
+        }
+        :last-child {
+            .info-text {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .content {
+        margin-top: .2rem;
+        background: #ffffff;
+        padding: .5rem .2rem;
+        .content-border {
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .content-head {
+            .content-title {
+                font-size: .3rem;
+                color: #000000;
+                text-align: center;
+            }
+            .content-icon {
+                display: block;
+                width: .2rem;
+                margin: 0 auto;
+                margin-top: .2rem;
+            }
+            .content-text {
+                color: #4e4e4e;
+                font-size: .3rem;
+                line-height: .3rem;
+                padding-bottom: .25rem;
+                span {
+                    display: inline-block;
+                    vertical-align: bottom;
+                    width: .1rem;
+                    height: .3rem;
+                    background: #0be1db;
+                }
+            }
+            .main-title {
+                font-size: .3rem;
+                color: #858585;
+                line-height: .4rem;
+                padding: 0 .2rem;
+                &:last-child {
+                    margin-bottom: .35rem;
+                }
+            }
+        }
+        .content-main {
+            margin-top: .2rem;
+            .content-center {
+                font-size: .3rem;
+                color: #7a7a7a;
+                text-align: center;
+                line-height: .4rem;
+            }
+        }
+    }
+
+    .bottom {
+        height: 1rem;
+        border-top: 1px solid #ebebeb;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: #ffffff;
+        .btm-left {
+            width: 62%;
+            height: 100%;
+            float: left;
+            p {
+                text-align: center;
+                font-size: .26rem;
+                color: #666666;
+                line-height: 1rem;
+                span {
+                    font-size: .36rem;
+                    color: #fe9c2d;
+                }
+            }
+        }
+        .btm-right {
+            float: right;
+            width: 38%;
+            height: 100%;
+            background: #fe9c2d;
+            color: #ffffff;
+            font-size: .3rem;
+            text-align: center;
+            line-height: 1rem;
+        }
+        .is-disable {
+            background: #666666;
+        }
+    }
+
+}

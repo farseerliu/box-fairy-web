@@ -1,0 +1,63 @@
+// 本样式是基于 weui.css 之后的（可查看 src/template.html）
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: 0.32rem;
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+.ued-page {
+    min-height: 100%;
+}
+
+// 页面级 class，构建脚本会自动添加在最外层容器上
+.ued-page {
+    position: relative;
+    display: block;
+    line-height: 1;
+}
+
+// 垂直水平居中
+.ued-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+// 弹性滚动
+.ued-scroll {
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+// 覆盖父容器的层
+.ued-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// 覆盖全屏的弹层
+.ued-pop {
+    .ued-layer;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 500;
+}
